@@ -9,6 +9,7 @@ import dahampasala6 from "../../assets/dahampasala/6.jpg";
 import dahampasala7 from "../../assets/dahampasala/7.jpg";
 import dahampasala8 from "../../assets/dahampasala/8.jpg";
 import dahampasala9 from "../../assets/dahampasala/9.jpg";
+import Footer from '../../components/footer/Footer';
 
 
 const DahamPasala = () => {
@@ -47,6 +48,7 @@ const DahamPasala = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer/>
     </>
   );
 };

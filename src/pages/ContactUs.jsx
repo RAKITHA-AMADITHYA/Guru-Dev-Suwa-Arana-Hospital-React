@@ -37,20 +37,13 @@ const ContactUs = () => {
 
   return (
     <section style={{ backgroundColor: '#EFEFEF' }} id="section1">
-     {isMediumUp && (   
-       <section style={{ backgroundColor: '#FFBB98', height: '15Vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', }} id="section3">
-        <Typography variant='h2' color={'#00000'} data-aos="zoom-in">Contact Guru Dev Suwa Arana</Typography>
-      </section>)}
-
-      {isMediumDown && (   
-       <section style={{ backgroundColor: '#FFBB98', height: '15Vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', }} id="section3">
-        <Typography variant='h3' color={'#00000'} data-aos="zoom-in">Contact Guru Dev <br/> Suwa Arana</Typography>
-      </section>)}
+  
 
       {isMediumUp && (  <Grid container >
         <Grid item xs={12} md={6} p={10} data-aos="zoom-in-right">
           <div style={{ display: 'flex', flex: 1, gap: '20px' }} >
-            <Contact2 />
+          <a href="tel:+94112853415">
+            <Contact2 /></a>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <h1>Contact Numbers</h1>
               <h1>(+94)-112853415 / (+94)-718395305</h1>
@@ -58,7 +51,7 @@ const ContactUs = () => {
           </div>
 
           <div style={{ display: 'flex', flex: 1, gap: '20px', marginTop: '10px' }} >
-            <PhoneButton />
+          <a href="mailto:gdsasrilanka@gmail.com">  <PhoneButton /></a>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <h1>Email</h1>
               <h1>gdsasrilanka@gmail.com</h1>
@@ -95,7 +88,8 @@ const ContactUs = () => {
          <Grid container >
         <Grid item xs={12} p={1} data-aos="zoom-in-right">
           <div style={{ display: 'flex', flex: 1, gap: '20px' }} >
-            <Contact2 />
+            <a href="tel:+94112853415">
+            <Contact2 /></a>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <h3>Contact Numbers</h3>
               <h3>(+94)-112853415 / (+94)-718395305</h3>
@@ -103,7 +97,8 @@ const ContactUs = () => {
           </div>
 
           <div style={{ display: 'flex', flex: 1, gap: '20px', marginTop: '10px' }} >
-            <PhoneButton />
+           <a href="mailto:gdsasrilanka@gmail.com">
+            <PhoneButton /></a>
             <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
               <h3>Email</h3>
               <h3>gdsasrilanka@gmail.com</h3>
@@ -127,7 +122,7 @@ const ContactUs = () => {
             />
             <Marker position={position}>
               <Popup>
-                R233+5C8, Dolahenea Moonamale Watta Rd, Moonamale, Sri Lanka
+                R233+5C8, Dolahenea Moonamale Watta Rd, Moonamale
               </Popup>
             </Marker>
           </MapContainer>

@@ -4,6 +4,7 @@ import social1 from "../../assets/social/1.jpg";
 import social2 from "../../assets/social/2.jpg";
 import social3 from "../../assets/social/3.jpg";
 import social4 from "../../assets/social/4.jpg";
+import Footer from '../../components/footer/Footer';
 
 
 
@@ -39,6 +40,7 @@ const SocialServices = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer/>
     </>
   );
 };

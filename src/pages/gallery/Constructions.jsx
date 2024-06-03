@@ -24,6 +24,7 @@ import construction21 from "../../assets/construction/21.jpg";
 import construction22 from "../../assets/construction/22.jpg";
 import construction23 from "../../assets/construction/23.jpg";
 import construction24 from "../../assets/construction/24.jpg";
+import Footer from '../../components/footer/Footer';
 
 
 
@@ -85,6 +86,7 @@ const Constructions = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer/>
     </>
   );
 };

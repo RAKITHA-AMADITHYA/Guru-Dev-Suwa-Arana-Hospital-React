@@ -3,6 +3,7 @@ import React from 'react';
 import mahana1 from "../../assets/mahana/1.png";
 import mahana2 from "../../assets/mahana/2.png";
 import mahana3 from "../../assets/mahana/3.png";
+import Footer from '../../components/footer/Footer';
 
 
 const MahanaPinkama = () => {
@@ -36,6 +37,7 @@ const MahanaPinkama = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer/>
     </>
   );
 };

@@ -14,12 +14,12 @@ const Footer = () => {
         </Grid>
 
         <Grid item xs={6} sm={6} md={6} lg={6} xl={6} display={'flex'} justifyContent={'end'} alignItems={'end'} flexDirection={'column'}>
-          <Typography variant='subtitle1' color={'#ff4d00'} fontWeight={800} >Contact Numbers</Typography>
+          <Typography variant='h6' color={'#ff4d00'} fontWeight={800} >Contact Numbers</Typography>
           <Typography variant='subtitle2' color={'white'} fontWeight={600}>(+94)-112853415</Typography>
           <Typography variant='subtitle2' color={'white'} fontWeight={600}>(+94)-718395305</Typography>
 
 
-          <Typography  variant='subtitle1' color={'#ff4d00'} fontWeight={800} >Email</Typography>
+          <Typography  variant='h6' color={'#ff4d00'} fontWeight={800} >Email</Typography>
           <Typography  variant='subtitle2' color={'white'} fontWeight={600}>gdsasrilanka@gmail.com</Typography>
         </Grid>
 

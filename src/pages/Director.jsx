@@ -35,8 +35,8 @@ const Director = () => {
               Kiriwattuduwa, in the Homagama Divisional Secretariat Division in the
               Colombo District.</Typography>
 
-            <div style={{ marginTop: '30px' }} >
-              <AnimatedButton btnName="Learn More" /></div>
+            {/* <div style={{ marginTop: '30px' }} >
+              <AnimatedButton btnName="Learn More" /></div> */}
           </Grid>
           <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} p={2} data-aos="zoom-in">
             <img src={thero1} width={'60%'} alt="" />
@@ -67,8 +67,8 @@ const Director = () => {
               Kiriwattuduwa, in the Homagama Divisional Secretariat Division in the
               Colombo District.</Typography>
 
-            <div style={{ marginTop: '30px' }} >
-              <Button variant='contained'>Learn More</Button></div>
+            {/* <div style={{ marginTop: '30px' }} >
+              <Button variant='contained'>Learn More</Button></div> */}
           </Grid>
           <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} p={1} data-aos="zoom-in">
             <img src={thero1} width={'80%'} alt="" />

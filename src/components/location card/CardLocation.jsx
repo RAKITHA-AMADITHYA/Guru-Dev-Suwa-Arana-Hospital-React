@@ -30,7 +30,7 @@ const CardLocation = ({ img, title, w ,h,link}) => {
                     <Typography variant='h5' color={'#00000'} fontWeight={'800'}>{title}</Typography>
                 </div>
                 <div style={{ padding: 10, margin: 5, display: 'flex', justifyContent: 'center' }}>
-                    <Typography variant='subtitle1' color={'#00000'} fontWeight={'400'} textAlign={'center'}>Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit  </Typography>
+                    <Typography variant='subtitle1' color={'#00000'} fontWeight={'400'} textAlign={'center'}>To See more Pictures Click on the Below button  </Typography>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5px', padding: 2 }} >
                     <Link to={link} style={{textDecoration:'none'}}>

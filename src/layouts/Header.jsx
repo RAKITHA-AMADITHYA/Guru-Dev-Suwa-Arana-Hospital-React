@@ -19,7 +19,7 @@ function Header() {
 
   const menuItems = [
     { text: 'HOME', to: '/' },
-    { text: 'PROGRESS', to: '/progress' },
+    // { text: 'PROGRESS', to: '/progress' },
     { text: 'GALLERY', to: '/view-gallery' },
     { text: 'DIRECTOR BOARD', to: '/director-board' },
     { text: 'DONATION', to: '/donate' },
@@ -29,10 +29,11 @@ function Header() {
   return (
     <div style={{ display: 'flex', padding: 10, alignItems: 'center' }}>
       <div style={{ flex: 1 }}>
-        <img src={logo} width={'15%'} alt="" />
+        <img src={logo} width={'10%'} alt="" />
       </div>
 
       {isMediumUp && (
+        
         <Grid item sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 3 }}>
           {menuItems.map((item) => (
             <Link to={item.to} key={item.text} style={{ textDecoration: 'none' }}>

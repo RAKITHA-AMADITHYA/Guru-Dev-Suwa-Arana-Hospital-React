@@ -9,6 +9,7 @@ import operning6 from "../../assets/operning/6.jpg";
 import operning7 from "../../assets/operning/7.jpg";
 import operning8 from "../../assets/operning/8.jpg";
 import operning9 from "../../assets/operning/9.jpg";
+import Footer from '../../components/footer/Footer';
 
 
 const OperningCeremony = () => {
@@ -49,6 +50,7 @@ const OperningCeremony = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer/>
     </>
   );
 };

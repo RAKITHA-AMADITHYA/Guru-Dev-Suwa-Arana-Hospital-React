@@ -24,7 +24,7 @@ import Footer from '../components/footer/Footer'
 
 const Home = () => {
   const isMediumUp = useMediaQuery((theme) => theme.breakpoints.up('md'));
-  const isMediumDown = useMediaQuery((theme) => theme.breakpoints.down('md'));
+  const isMediumDown = useMediaQuery((theme) => theme.breakpoints.down('sm'));
 
 
   useEffect(() => {
@@ -129,14 +129,11 @@ const Home = () => {
             </Typography>
             <hr style={{ background: '#FF4D00', height: '5px', border: 'none', width: '30%' }} />
             <Typography variant='h6' color={'#757575'} marginTop={3}>
-              A great commitment is made by the Buddhist monks towards the prosperity
-              and the well-being of our society and the country. It is an utmost need
-              of the present to care for and to provide medical facilities to the aged and
-              the needy monks. Therefore now it is the duty of each one of us to support
-              and contribute to this worthy cause as a nation.
+            Buddhist monks prioritize societal prosperity and well-being, providing medical facilities for the aged and needy. It is our duty to support and contribute to this worthy cause.
             </Typography>
             <div style={{ marginTop: '50px' }}>
-              <AnimatedButton2 />
+              <a href="https://www.youtube.com/watch?v=XyPbpGZt4jg&t=1134s">
+              <AnimatedButton2 /></a>
             </div>
           </Grid>
         </Grid>
@@ -158,16 +155,13 @@ const Home = () => {
             </Typography>
             <hr style={{ background: '#FF4D00', height: '5px', border: 'none', width: '30%' }} />
             <Typography variant='subtitle2' color={'#757575'} marginTop={3}>
-              A great commitment is made by the Buddhist monks towards the prosperity
-              and the well-being of our society and the country. It is an utmost need
-              of the present to care for and to provide medical facilities to the aged and
-              the needy monks. Therefore now it is the duty of each one of us to support
-              and contribute to this worthy cause as a nation.
+            Buddhist monks prioritize societal prosperity and well-being, providing medical facilities for the aged and needy. It is our duty to support and contribute to this worthy cause.
             </Typography>
             <div style={{ marginTop: '20px' }}>
               <Link to='/donate' style={{ textDecoration: 'none' }}>
                 {/* <AnimatedButton btnName="Donate" /> */}
-                <Button variant='contained'>Learn More</Button>
+                <a href="https://www.youtube.com/watch?v=XyPbpGZt4jg&t=1134s">
+                <Button variant='contained'>Learn More</Button></a>
               </Link>
             </div>
           </Grid>

@@ -9,6 +9,7 @@ import katina6 from "../../assets/katina/6.jpg";
 import katina7 from "../../assets/katina/7.jpg";
 import katina8 from "../../assets/katina/8.jpg";
 import katina9 from "../../assets/katina/9.jpg";
+import Footer from '../../components/footer/Footer';
 
 
 const KatinaPinkama = () => {
@@ -47,6 +48,7 @@ const KatinaPinkama = () => {
           </Grid>
         ))}
       </Grid>
+      <Footer/>
     </>
   );
 };
