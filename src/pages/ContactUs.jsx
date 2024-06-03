@@ -1,4 +1,4 @@
-import { Grid, Typography } from '@mui/material';
+import { Grid, Typography, useMediaQuery } from '@mui/material';
 import React, { useEffect } from 'react';
 import Contact2 from '../components/Button/Contact2';
 import FbBtn from '../components/Button/FaceBook';
@@ -22,6 +22,9 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const ContactUs = () => {
+
+  const isMediumUp = useMediaQuery((theme) => theme.breakpoints.up('md'));
+  const isMediumDown = useMediaQuery((theme) => theme.breakpoints.down('md'));
   useEffect(() => {
     AOS.init({
       duration: 1000, // Duration of the animation in milliseconds
@@ -34,10 +37,17 @@ const ContactUs = () => {
 
   return (
     <section style={{ backgroundColor: '#EFEFEF' }} id="section1">
-        <section style={{ backgroundColor: '#FFBB98', height: '15Vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', }} id="section3">
+     {isMediumUp && (   
+       <section style={{ backgroundColor: '#FFBB98', height: '15Vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', }} id="section3">
         <Typography variant='h2' color={'#00000'} data-aos="zoom-in">Contact Guru Dev Suwa Arana</Typography>
-      </section>
-      <Grid container >
+      </section>)}
+
+      {isMediumDown && (   
+       <section style={{ backgroundColor: '#FFBB98', height: '15Vh', display: 'flex', justifyContent: 'center', alignItems: 'center', textAlign: 'center', }} id="section3">
+        <Typography variant='h3' color={'#00000'} data-aos="zoom-in">Contact Guru Dev <br/> Suwa Arana</Typography>
+      </section>)}
+
+      {isMediumUp && (  <Grid container >
         <Grid item xs={12} md={6} p={10} data-aos="zoom-in-right">
           <div style={{ display: 'flex', flex: 1, gap: '20px' }} >
             <Contact2 />
@@ -77,7 +87,53 @@ const ContactUs = () => {
             </Marker>
           </MapContainer>
         </Grid>
-      </Grid>
+      </Grid>)}
+
+
+
+      {isMediumDown && ( 
+         <Grid container >
+        <Grid item xs={12} p={1} data-aos="zoom-in-right">
+          <div style={{ display: 'flex', flex: 1, gap: '20px' }} >
+            <Contact2 />
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3>Contact Numbers</h3>
+              <h3>(+94)-112853415 / (+94)-718395305</h3>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', flex: 1, gap: '20px', marginTop: '10px' }} >
+            <PhoneButton />
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3>Email</h3>
+              <h3>gdsasrilanka@gmail.com</h3>
+            </div>
+          </div>
+
+          <div style={{ display: 'flex', flex: 1, gap: '20px', marginTop: '10px' }} >
+            <FbBtn />
+            <div style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
+              <h3>Facebook</h3>
+              <h3>Guna dev suwa Arana</h3>
+            </div>
+          </div>
+        </Grid>
+
+        <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} p={2} data-aos="zoom-in-left">
+          <MapContainer center={position} zoom={15} style={{ height: '400px', width: '100%' }}>
+            <TileLayer
+              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; <a href="https://osm.org/copyright">OpenStreetMap</a> contributors'
+            />
+            <Marker position={position}>
+              <Popup>
+                R233+5C8, Dolahenea Moonamale Watta Rd, Moonamale, Sri Lanka
+              </Popup>
+            </Marker>
+          </MapContainer>
+        </Grid>
+      </Grid>)}
+      
       <Footer/>
     </section>
   );

@@ -1,6 +1,6 @@
 import React from 'react'
 import  BrokenImage  from '../../assets/brokenImg.png'
-import  errorImg  from '../../assets/404img.png'
+// import  errorImg  from '../../assets/404img.png'
 
 import { Grid ,Typography} from '@mui/material';
 
@@ -8,7 +8,7 @@ const Error1 = () => {
   return (
     <Grid item  display={'flex'} justifyContent={'center'} alignItems={'center'} flexDirection={'column'} textAlign={'center'}>
       <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'}>
-        <img src={BrokenImage} width={'65%'} alt="" />
+        {/* <img src={BrokenImage} width={'65%'} alt="" /> */}
       </Grid>
       <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'}>
       <img src={errorImg} width={'65%'} alt="" />
