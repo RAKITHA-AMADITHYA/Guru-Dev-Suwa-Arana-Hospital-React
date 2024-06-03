@@ -3,6 +3,7 @@ import { Card, Typography } from '@mui/material'
 import './animation.css'
 import GalleryBtn from '../Button/GalleryBtn'
 import LoadingAnimation from '../loading animation/LoadingAnimation';
+import { Link } from 'react-router-dom';
 
 
 
@@ -19,12 +20,12 @@ function SuspenseWrapper({ children }) {
       </Suspense>
     );
   }
-const CardLocation = ({ img, title, w }) => {
+const CardLocation = ({ img, title, w ,h,link}) => {
     return (
         <SuspenseWrapper>
         <div>
             <Card className="card" sx={{ borderRadius: 3, boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', width: 'auto',  }} >
-                <img src={img} width={w} alt="" />
+                <img src={img} width={w} height={h} alt="" />
                 <div style={{ padding: 2, margin: 2, display: 'flex', justifyContent: 'center' }} >
                     <Typography variant='h5' color={'#00000'} fontWeight={'800'}>{title}</Typography>
                 </div>
@@ -32,7 +33,8 @@ const CardLocation = ({ img, title, w }) => {
                     <Typography variant='subtitle1' color={'#00000'} fontWeight={'400'} textAlign={'center'}>Lorem ipsum dolor sit amet, consectetur adipiscing ipsum dolor sit  </Typography>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '5px', padding: 2 }} >
-                    <GalleryBtn />
+                    <Link to={link} style={{textDecoration:'none'}}>
+                    <GalleryBtn /></Link>
                 </div>
             </Card>
         </div></SuspenseWrapper>

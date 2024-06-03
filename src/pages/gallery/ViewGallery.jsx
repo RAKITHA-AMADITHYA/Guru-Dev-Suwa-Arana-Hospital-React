@@ -1,11 +1,13 @@
-import React from 'react'
-import CardLocation from '../../components/location card/CardLocation'
 import { Grid, Typography } from '@mui/material'
-import building from "../../assets/building.png"
+import React from 'react'
+import construction from "../../assets/construction4.png"
+import daham from "../../assets/daham.png"
+import katina from "../../assets/katina1.png"
+import mahana from "../../assets/mahana.png"
+import operning from "../../assets/operning1.png"
+import social from "../../assets/social.png"
+import CardLocation from '../../components/location card/CardLocation'
 import Footer from '../../components/footer/Footer'
-
-
-
 
 
 const ViewGallery = () => {
@@ -17,27 +19,27 @@ const ViewGallery = () => {
       </section>
       <Grid container p={5} spacing={2} >
         <Grid item xs={12} md={3}>
-          <CardLocation title="Constructions" img={building} />
+          <CardLocation title="Constructions" img={construction} link={'/constructions'}/>
         </Grid>
 
 
         <Grid item xs={12} md={3}>
-          <CardLocation title="Operning Ceremony" img={building} />
+          <CardLocation title="Operning Ceremony" img={operning} link={'/operning-ceremony'} />
         </Grid>
 
         <Grid item xs={12} md={3}>
-          <CardLocation title="Social Services" img={building} />
+          <CardLocation title="Social Services" img={social} link={'/social-services'}/>
         </Grid>
 
         <Grid item xs={12} md={3}>
-          <CardLocation title="Daham Pasala" img={building} />
+          <CardLocation title="Daham Pasala" img={daham} link={'/daham-pasala'} />
         </Grid>
 
         <Grid item xs={12} md={3}>
-          <CardLocation title="Katina Pinkama" img={building} />
+          <CardLocation title="Katina Pinkama" img={katina} link={'/katina-pinkama'} />
         </Grid>
         <Grid item xs={12} md={3}>
-          <CardLocation title="Mahana Pinkama" img={building} />
+          <CardLocation title="Mahana Pinkama" img={mahana} link={'/mahana-pinkama'}/>
         </Grid>
 
       </Grid>

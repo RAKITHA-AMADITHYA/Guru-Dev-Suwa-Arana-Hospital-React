@@ -21,6 +21,7 @@ import YouTubeEmbed from '../components/Youtube video/YoutubeVideo'
 
 import dot from '../assets/dot.png'
 import Footer from '../components/footer/Footer'
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -78,7 +79,10 @@ const Home = () => {
               one of us to support and contribute to this worthy cause
               as a nation.</Typography>
             <div style={{ marginTop: '30px' }} data-aos="fade-up">
-              <AnimatedButton btnName="Donate" /></div>
+              <Link to='/donate' style={{textDecoration:'none'}}>
+              <AnimatedButton btnName="Donate" />
+              </Link>
+              </div>
 
           </Grid>
 

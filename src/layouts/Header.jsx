@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Typography } from "@mui/material";
 
-import logo from '../assets/logo.png';
+import logo from '../assets/logo1.png';
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -10,11 +10,11 @@ function Header() {
       <div style={{ flex: 1 }}>
         <img src={logo} width={'100px'} alt="" />
       </div>
-      <Grid item sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 4, }}>
+      <Grid item sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 3, }}>
 
         {/* Home page */}
         <Link to='/' style={{ textDecoration: 'none' }}>
-          <Typography variant='subtitle2'
+          <Typography variant='h6'
             sx={{
               color: '#000',
               fontWeight: 600,
@@ -33,7 +33,7 @@ function Header() {
         {/* Progress page */}
         <Link to='/progress' style={{ textDecoration: 'none' }}>
 
-          <Typography variant='subtitle2'
+          <Typography variant='h6'
             sx={{
               color: '#000',
               fontWeight: 600,
@@ -54,7 +54,7 @@ function Header() {
         {/* View Gallery */}
         <Link to={'/view-gallery'} style={{ textDecoration: 'none' }}>
 
-          <Typography variant='subtitle2'
+          <Typography variant='h6'
             sx={{
               color: '#000',
               fontWeight: 600,
@@ -75,7 +75,7 @@ function Header() {
 
         {/* Director Board */}
         <Link to={'/director-board'} style={{ textDecoration: 'none' }}>
-          <Typography variant='subtitle2'
+          <Typography variant='h6'
             sx={{
               color: '#000',
               fontWeight: 600,
@@ -96,7 +96,7 @@ function Header() {
        
          {/* Donation */}
          <Link to={'/donate'} style={{ textDecoration: 'none' }}>
-        <Typography variant='subtitle2'
+        <Typography variant='h6'
           sx={{
             color: '#000',
             fontWeight: 600,
@@ -111,7 +111,10 @@ function Header() {
           href="#section1">DONATION
         </Typography>
 </Link>
-        <Typography variant='subtitle2'
+
+  {/* Contact us */}
+  <Link to={'/contact-us'} style={{ textDecoration: 'none' }}>
+        <Typography variant='h6'
           sx={{
             color: '#000',
             fontWeight: 600,
@@ -126,6 +129,7 @@ function Header() {
           href="#section1">
           CONACT US
         </Typography>
+        </Link>
       </Grid>
     </div>
   );
