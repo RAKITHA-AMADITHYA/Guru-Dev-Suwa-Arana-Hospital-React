@@ -1,13 +1,14 @@
 import { Button, Grid, Typography, useMediaQuery } from '@mui/material';
 import React, { useEffect } from 'react';
 import movileThero from '../assets/thero11.jpg';
-import donate from '../assets/donate.png';
+import donate from '../assets/t25.png';
 
 import boc from '../assets/boc.png';
 import sampath from '../assets/sampath3.png';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Footer from '../components/footer/Footer';
+import AnimatedButton from '../components/Button/AnimatedButton ';
 
 const Donate = () => {
 
@@ -34,29 +35,29 @@ const Donate = () => {
             backgroundSize: 'cover', // Ensures the image covers the entire grid container
             backgroundPosition: 'center', // Centers the image
             backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-            height: '55vh'
+            height: '55vh',
+            backgroundColor:'#342222'
           }}
         >
-          <Grid item xs={12} md={6} p={10}></Grid>
 
           <Grid item xs={12} md={6} p={10} data-aos="fade-up">
             <Typography
               variant='h5'
               color={'#fff'}
-              textAlign={'end'}
+              textAlign={'start'}
             >
               Facility For Medical Care
             </Typography>
             <Typography
               variant='h3'
               color={'#fff'}
-              textAlign={'end'}
+              textAlign={'start'}
             >
               Donate For Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span>
             </Typography>
 
-            <div style={{ marginTop: '30px' }}>
-              {/* <AnimatedButton btnName="Donate" /> */}
+            <div style={{ marginTop: '30px', display:'flex',justifyContent:'start' }}>
+              <AnimatedButton btnName="Donate Now" />
             </div>
           </Grid>
         </Grid>

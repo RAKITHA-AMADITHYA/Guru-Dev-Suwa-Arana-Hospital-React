@@ -27,10 +27,17 @@ function Header() {
   ];
 
   return (
-    <div style={{ display: 'flex', padding: 10, alignItems: 'center' }}>
-      <div style={{ flex: 1 }}>
-        <img src={logo} width={'10%'} alt="" />
-      </div>
+    <div style={{ display: 'flex', padding: 10, alignItems: 'center',background:'#E0E0E0' }}>
+     {isMediumUp && ( <div style={{ flex: 1 }}>
+      <div style={{display:'flex',gap:10}}>
+        <img src={logo} width={'10%'} alt="" /> 
+        <Typography variant='h5' display={'flex'} alignItems={'center'} fontWeight={800} color={'#ec4c0f'}>Guru Dev Suwa Arana</Typography></div>
+      </div>)}
+
+
+      {isMediumDown && ( <div style={{ flex: 1 }}>
+        <img src={logo} width={'20%'} alt="" />
+      </div>)}
 
       {isMediumUp && (
         
@@ -38,7 +45,7 @@ function Header() {
           {menuItems.map((item) => (
             <Link to={item.to} key={item.text} style={{ textDecoration: 'none' }}>
               <Typography
-                variant='h6'
+                variant='subtitle1'
                 sx={{
                   color: '#000',
                   fontWeight: 600,

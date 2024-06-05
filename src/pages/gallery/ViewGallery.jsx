@@ -1,11 +1,11 @@
 import { Grid, Typography } from '@mui/material'
 import React from 'react'
-import construction from "../../assets/construction4.png"
-import daham from "../../assets/daham.png"
-import katina from "../../assets/katina1.png"
+import construction from "../../assets/c1.jpeg"
+import daham from "../../assets/daham1.jpeg"
+import katina from "../../assets/katina2.jpeg"
 import mahana from "../../assets/mahana.png"
-import operning from "../../assets/operning1.png"
-import social from "../../assets/social.png"
+import operning from "../../assets/o1.jpeg"
+import social from "../../assets/social1.jpeg"
 import CardLocation from '../../components/location card/CardLocation'
 import Footer from '../../components/footer/Footer'
 

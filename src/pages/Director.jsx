@@ -1,10 +1,10 @@
+import { Box, Grid, Typography, useMediaQuery } from '@mui/material'
 import React from 'react'
-import Footer from '../components/footer/Footer'
-import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material'
-import thero1 from '../assets/thero3.png'
-import AnimatedButton from '../components/Button/AnimatedButton '
 import budhdha from '../assets/budhdha.png'
-import dot from '../assets/dot.png'
+import thero1 from '../assets/thero12.jpeg'
+import thero2 from '../assets/thero2.jpeg'
+
+import Footer from '../components/footer/Footer'
 
 const Director = () => {
 
@@ -81,7 +81,7 @@ const Director = () => {
 
       {/* Section2 */}
 
-      {isMediumUp && (<Grid item xs={12} md={6} p={10}>
+      {/* {isMediumUp && (<Grid item xs={12} md={6} p={10}>
         <Typography
           variant='h3'
           color={'#212b36'}
@@ -101,7 +101,42 @@ const Director = () => {
           Sri Dhatumaluwa Temple which is registered under the
           Companies Act as a non-profit organization.
         </Typography>
-      </Grid>)};
+      </Grid>)}; */}
+      {isMediumUp && (<section style={{marginTop:'60px' }} id="section1">
+        <Grid container>
+          
+          <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} p={2} >
+            <img src={thero2} width={'60%'} alt="" />
+          </Grid>
+          
+          
+          <Grid item xs={12} md={6} p={10}>
+            <Typography
+              variant='h5'
+              color={'#212b36'}
+              textAlign={'start'}
+              
+            >
+              The Chief monk of Sri Dathumaluwa Temple
+            </Typography>
+            <Typography variant='h2'
+              ><span style={{ color: '#FF4D00' }}> Ven </span>  Pitigala Sonuththara Thero </Typography>
+            <Typography mt={2} variant='h6'
+              > The  Venerable Pitigala Sonuththara current chief Nayaka Thero of the Sri
+              Dhathamma Viharaya, No. 94, Sunethra Devi Road, Kohuwala, has
+              identified the need to build another hospital with the facilities for the
+              monks living in the country.As a result of his untiring efforts, he has
+              donated a land of 40 perches, situated at 286/1 B, Pansala Road,
+              Kiriwattuduwa, in the Homagama Divisional Secretariat Division in the
+              Colombo District.</Typography>
+
+            {/* <div style={{ marginTop: '30px' }} >
+              <AnimatedButton btnName="Learn More" /></div> */}
+          </Grid>
+          
+
+        </Grid>
+      </section>)}
 
       {isMediumDown && (<Grid item xs={12} md={6} p={2}>
         <Typography
@@ -126,6 +161,27 @@ const Director = () => {
       </Grid>)};
 
 
+ {isMediumUp && (<Grid item xs={12} md={6} p={10}>
+        <Typography
+          variant='h3'
+          color={'#212b36'}
+          textAlign={'start'}
+        >
+          Management
+        </Typography>
+        <hr style={{ background: '#FF4D00', height: '5px', border: 'none', width: '15%' }} />
+        <Typography
+          variant='h5'
+          color={'#212b36'}
+          textAlign={'start'}
+          mt={2}
+        >
+          This institution is managed by the Board of Directors
+          jointly with the Ministry of Health and the Kohuwala
+          Sri Dhatumaluwa Temple which is registered under the
+          Companies Act as a non-profit organization.
+        </Typography>
+      </Grid>)};
 
       {/* section +3 */}
 
