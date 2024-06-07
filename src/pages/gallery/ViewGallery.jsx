@@ -18,20 +18,20 @@ const ViewGallery = () => {
         <Typography variant='h2' color={'#00000'}>Guru Dev Suwa Arana Gallery  </Typography>
       </section>
       <Grid container p={5} spacing={2} >
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <CardLocation title="Constructions" img={construction} link={'/constructions'}/>
         </Grid>
 
 
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <CardLocation title="Operning Ceremony" img={operning} link={'/operning-ceremony'} />
         </Grid>
 
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={4}>
           <CardLocation title="Social Services" img={social} link={'/social-services'}/>
         </Grid>
 
-        <Grid item xs={12} md={3}>
+        {/* <Grid item xs={12} md={3}>
           <CardLocation title="Daham Pasala" img={daham} link={'/daham-pasala'} />
         </Grid>
 
@@ -40,7 +40,7 @@ const ViewGallery = () => {
         </Grid>
         <Grid item xs={12} md={3}>
           <CardLocation title="Mahana Pinkama" img={mahana} link={'/mahana-pinkama'}/>
-        </Grid>
+        </Grid> */}
 
       </Grid>
       <Footer/>

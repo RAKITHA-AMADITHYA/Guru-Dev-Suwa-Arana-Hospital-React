@@ -1,5 +1,5 @@
 import { Divider, Grid, Typography, useMediaQuery } from '@mui/material';
-import copyRight from '../../assets/copyrights.png';
+import copyRight from '../../assets/powered.png';
 import FbBtn from '../Button/FaceBook';
 import logo from '../../assets/logo1.png'
 
@@ -10,7 +10,7 @@ const Footer = () => {
     <section style={{ background: '#292727' }}>
     {isMediumUp && (   <Grid container p={2}>
         <Grid item xs={6} sm={6} md={6} lg={6} xl={6} >
-          <img src={logo} width={'20%'} alt="" />
+          <img src={logo} width={'15%'} alt="" />
         </Grid>
 
         <Grid item xs={6} sm={6} md={6} lg={6} xl={6} display={'flex'} justifyContent={'end'} alignItems={'end'} flexDirection={'column'}>
@@ -45,9 +45,9 @@ const Footer = () => {
 
 
 
-      <Divider sx={{ my: 2 }} />
+      {/* <Divider sx={{ my: 2 }} /> */}
       {isMediumUp && (   <div style={{ padding: '10px', display:'flex', justifyContent:'center' }}>
-          <img src={copyRight} width={'18%'} alt="" />
+          <img src={copyRight} width={'12%'} alt="" />
 
       </div>)}
       {isMediumDown && (   <div style={{ padding: '1px', display:'flex', justifyContent:'center' }}>

@@ -19,7 +19,6 @@ function Header() {
 
   const menuItems = [
     { text: 'HOME', to: '/' },
-    // { text: 'PROGRESS', to: '/progress' },
     { text: 'GALLERY', to: '/view-gallery' },
     { text: 'DIRECTOR BOARD', to: '/director-board' },
     { text: 'DONATION', to: '/donate' },
@@ -27,10 +26,10 @@ function Header() {
   ];
 
   return (
-    <div style={{ display: 'flex', padding: 10, alignItems: 'center',background:'#E0E0E0' }}>
+    <div style={{ display: 'flex', padding: 10, alignItems: 'center',background:'#FFFF',height:'12%',boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)' }}>
      {isMediumUp && ( <div style={{ flex: 1 }}>
       <div style={{display:'flex',gap:10}}>
-        <img src={logo} width={'10%'} alt="" /> 
+        <img src={logo} width={'8%'} alt="" /> 
         <Typography variant='h5' display={'flex'} alignItems={'center'} fontWeight={800} color={'#ec4c0f'}>Guru Dev Suwa Arana</Typography></div>
       </div>)}
 
@@ -41,7 +40,7 @@ function Header() {
 
       {isMediumUp && (
         
-        <Grid item sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 3 }}>
+        <Grid item sx={{ display: { xs: 'none', md: 'flex' }, alignItems: 'center', gap: 3 ,height:'100%'}}>
           {menuItems.map((item) => (
             <Link to={item.to} key={item.text} style={{ textDecoration: 'none' }}>
               <Typography
@@ -54,7 +53,8 @@ function Header() {
                     textDecoration: 'underline',
                     textDecorationColor: '#FF4D00',
                     textDecorationThickness: '5px',
-                    cursor: 'pointer'
+                    cursor: 'pointer',
+                    
                   }
                 }}
               >

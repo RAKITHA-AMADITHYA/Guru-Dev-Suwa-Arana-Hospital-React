@@ -26,136 +26,126 @@ const Donate = () => {
   return (
     <>
       {/* <!-- ==========  Section 1  ========== --> */}
-      {isMediumUp && ( 
-      <section style={{ overflowX: 'none' }}>
-        <Grid
-          container
-          style={{
-            backgroundImage: `url(${donate})`,
-            backgroundSize: 'cover', // Ensures the image covers the entire grid container
-            backgroundPosition: 'center', // Centers the image
-            backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-            height: '55vh',
-            backgroundColor:'#342222'
-          }}
-        >
+      {isMediumUp && (
+        <section style={{ overflowX: 'none' }}>
+          <Grid
+            container
+            style={{
+              backgroundImage: `url(${donate})`,
+              backgroundSize: 'cover', 
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+              height: '55vh',
+              backgroundColor: '#342222'
+            }}
+          >
 
-          <Grid item xs={12} md={6} p={10} data-aos="fade-up">
-            <Typography
-              variant='h5'
-              color={'#fff'}
-              textAlign={'start'}
-            >
-              Facility For Medical Care
-            </Typography>
-            <Typography
-              variant='h3'
-              color={'#fff'}
-              textAlign={'start'}
-            >
-              Donate For Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span>
-            </Typography>
-
-            <div style={{ marginTop: '30px', display:'flex',justifyContent:'start' }}>
-              <AnimatedButton btnName="Donate Now" />
-            </div>
-          </Grid>
-        </Grid>
-        <Grid container sx={{ overflowX: 'none' }}>
-          <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} data-aos="fade-right">
-            <img src={boc} width={'25%'} alt="" />
-
-            <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography mt={2} variant='subtitle1' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
-                Guru Dev Suwa Arana(A/C)<br />
-                A/C Number - 79212171 <br />
-                SWIFT CODE - BCEYLKLX</Typography>
-            </div>
-          </Grid>
-          {/* <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} data-aos="fade-left">
-            <img src={sampath} width={'30%'} height={'55%'} alt="Sampath Bank Logo" />
-            <div style={{ textAlign: 'start', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', marginLeft: '20px' }}>
-              <Typography variant='subtitle1' fontWeight={700}>
-                SAMPATH BANK (KOHUWALA)<br />
-                Guru Dev Suwa Arana(A/C)<br />
-                A/C Number - 109414025275 <br />
-                SWIFT CODE - BSAMLKLX
+            <Grid item xs={12} md={6} p={10} data-aos="fade-up">
+              <Typography
+                variant='h5'
+                color={'#fff'}
+                textAlign={'start'}
+              >
+                Facility For Medical Care
               </Typography>
-            </div>
-          </Grid> */}
-          <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} data-aos="fade-right">
-            <img src={sampath} width={'25%'} alt="" />
+              <Typography
+                variant='h3'
+                color={'#fff'}
+                textAlign={'start'}
+              >
+                Donate For Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span>
+              </Typography>
 
-            <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography mt={2} variant='subtitle1' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
-                Guru Dev Suwa Arana(A/C)<br />
-                A/C Number - 79212171 <br />
-                SWIFT CODE - BCEYLKLX</Typography>
-            </div>
+              <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'start' }}>
+                <Button variant='contained'>Donate Now</Button>         </div>
+            </Grid>
           </Grid>
-        </Grid>
-      </section>)}
+          <Grid container sx={{ overflowX: 'none' }}>
+            <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} >
+              <img src={boc} width={'25%'} alt="" />
 
+              <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Typography mt={2} variant='subtitle1' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
+                  Guru Dev Suwa Arana(A/C)<br />
+                  A/C Number - 79212171 <br />
+                  SWIFT CODE - BCEYLKLX</Typography>
+              </div>
+            </Grid>
+            
+            <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} >
+              <img src={sampath} width={'25%'} alt="" />
 
-
-      {isMediumDown && ( 
-      <section style={{ overflowX: 'none' }}>
-        <Grid
-          container
-          style={{
-            backgroundImage: `url(${movileThero})`,
-            backgroundSize: 'cover', // Ensures the image covers the entire grid container
-            backgroundPosition: 'center', // Centers the image
-            backgroundRepeat: 'no-repeat', // Prevents the image from repeating
-            height: '55vh'
-          }}
-        >
-
-          <Grid item xs={12} md={6} p={3} display={'flex'} justifyContent={'start'} flexDirection={'column'} textAlign={'end'} data-aos="fade-up">
-            <Typography
-              variant='h6'
-              color={'#fff'}
-              textAlign={'end'}
-            >
-              Facility For Medical Care
-            </Typography>
-            <Typography
-              variant='h3'
-              color={'#fff'}
-              textAlign={'end'}
-            >
-              Donate For Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span>
-            </Typography>
-
-            <div style={{ marginTop: '30px' }}>
-              <Button variant='contained'>LEARN MORE</Button>
-            </div>
+              <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Typography mt={2} variant='subtitle1' fontWeight={700}>
+                SAMPATH BANK (KOHUWALA)<br />
+                  Guru Dev Suwa Arana(A/C)<br />
+                  A/C Number - 109414025275 <br />
+                  SWIFT CODE -BSAMLKLX</Typography>
+              </div>
+            </Grid>
           </Grid>
-        </Grid>
-        <Grid container sx={{ overflowX: 'none' }}>
-          <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} data-aos="fade-right">
-            <img src={boc} width={'45%'} alt="" />
+        </section>)}
 
-            <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography mt={2} variant='caption' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
-                Guru Dev Suwa Arana(A/C)<br />
-                A/C Number - 79212171 <br />
-                SWIFT CODE - BCEYLKLX</Typography>
-            </div>
-          </Grid>
-      
-          <Grid item xs={12} md={6} display={'flex'} justifyContent={'start'} alignItems={'center'}>
-            <img src={sampath} width={'45%'} alt="" />
 
-            <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <Typography mt={2} variant='caption' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
-                Guru Dev Suwa Arana(A/C)<br />
-                A/C Number - 79212171 <br />
-                SWIFT CODE - BCEYLKLX</Typography>
-            </div>
+
+      {isMediumDown && (
+        <section style={{ overflowX: 'none' }}>
+          <Grid
+            container
+            style={{
+              backgroundImage: `url(${movileThero})`,
+              backgroundSize: 'cover', // Ensures the image covers the entire grid container
+              backgroundPosition: 'center', // Centers the image
+              backgroundRepeat: 'no-repeat', // Prevents the image from repeating
+              height: '55vh'
+            }}
+          >
+
+            <Grid item xs={12} md={6} p={3} display={'flex'} justifyContent={'start'} flexDirection={'column'} textAlign={'end'} data-aos="fade-up">
+              <Typography
+                variant='h6'
+                color={'#fff'}
+                textAlign={'end'}
+              >
+                Facility For Medical Care
+              </Typography>
+              <Typography
+                variant='h3'
+                color={'#fff'}
+                textAlign={'end'}
+              >
+                Donate For Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span>
+              </Typography>
+
+              <div style={{ marginTop: '30px' }}>
+                <Button variant='contained'>LEARN MORE</Button>
+              </div>
+            </Grid>
           </Grid>
-        </Grid>
-      </section>)}
+          <Grid container sx={{ overflowX: 'none' }}>
+            <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} data-aos="fade-right">
+              <img src={boc} width={'45%'} alt="" />
+
+              <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Typography mt={2} variant='caption' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
+                  Guru Dev Suwa Arana(A/C)<br />
+                  A/C Number - 79212171 <br />
+                  SWIFT CODE - BCEYLKLX</Typography>
+              </div>
+            </Grid>
+
+            <Grid item xs={12} md={6} display={'flex'} justifyContent={'start'} alignItems={'center'}>
+              <img src={sampath} width={'45%'} alt="" />
+
+              <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                <Typography mt={2} variant='caption' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
+                  Guru Dev Suwa Arana(A/C)<br />
+                  A/C Number - 79212171 <br />
+                  SWIFT CODE - BCEYLKLX</Typography>
+              </div>
+            </Grid>
+          </Grid>
+        </section>)}
       <div style={{ marginTop: '100px' }}>
         <Footer />
       </div>

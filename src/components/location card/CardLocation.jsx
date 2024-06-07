@@ -27,7 +27,7 @@ const CardLocation = ({ img, title, w ,h,link}) => {
             <Card className="card" sx={{ borderRadius: 3, boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)', width: 'auto',  }} >
                 <img src={img} width={w} height={h} alt="" />
                 <div style={{ padding: 2, margin: 2, display: 'flex', justifyContent: 'center' }} >
-                    <Typography variant='h5' color={'#00000'} fontWeight={'800'}>{title}</Typography>
+                    <Typography variant='h4' color={'#00000'} fontWeight={'800'}>{title}</Typography>
                 </div>
                 <div style={{ padding: 10, margin: 5, display: 'flex', justifyContent: 'center' }}>
                     <Typography variant='subtitle1' color={'#00000'} fontWeight={'400'} textAlign={'center'}>To See more Pictures Click on the Below button  </Typography>

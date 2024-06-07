@@ -1,30 +1,29 @@
 import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material'
 import React, { useEffect } from 'react'
 import img1 from '../assets/b1.jpeg'
-import bikku1 from '../assets/t20.png'
+import bikku1 from '../assets/t31.png'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
 import '../assets/FontAnimation.css'
+import banner2 from '../assets/banner2.png'
 import construction from '../assets/construction.png'
 import coordination from '../assets/coordination.png'
 import home from '../assets/home.png'
 import location from '../assets/location.png'
-import banner2 from '../assets/banner2.png'
-import operning1 from "../assets/operning/1.jpg";
 
+import { Link } from 'react-router-dom'
+import Slider from 'react-slick'
+import 'slick-carousel/slick/slick-theme.css'
+import 'slick-carousel/slick/slick.css'
+import dot from '../assets/dot.png'
 import mobileThero from '../assets/t20M1.png'
-import AnimatedButton from '../components/Button/AnimatedButton '
-import AnimatedButton2 from '../components/Button/AnimationButton2'
 import v1 from '../assets/v1.mp4'
 import v2 from '../assets/v2.mp4'
+import AnimatedButton from '../components/Button/AnimatedButton '
+import AnimatedButton2 from '../components/Button/AnimationButton2'
 import YouTubeEmbed from '../components/Youtube video/YoutubeVideo'
-import { Link } from 'react-router-dom'
-import dot from '../assets/dot.png'
 import Footer from '../components/footer/Footer'
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 
 const Home = () => {
@@ -43,7 +42,7 @@ const Home = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
+    speed: 2000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
@@ -57,7 +56,7 @@ const Home = () => {
           slidesToScroll: 1,
           infinite: true,
           dots: true,
-        }
+        },
       },
       {
         breakpoint: 600,
@@ -65,16 +64,16 @@ const Home = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           initialSlide: 1,
-        }
+        },
       },
       {
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-        }
-      }
-    ]
+        },
+      },
+    ],
   };
 
 
@@ -82,51 +81,23 @@ const Home = () => {
   return (
     <div>
       {/* <!-- ==========  Section 1  ========== --> */}
-      <section style={{ backgroundColor: '#EFEFEF', backgroundImage: { bikku1 } }} id="section1">
-        {/* {isMediumUp && (
-          <Grid
-            container
-            style={{
-              backgroundImage: `url(${bikku1})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              height: '90vh',
-            }}
-          >
-            <Grid item xs={12} md={6} p={10}></Grid>
-
-            <Grid item xs={12} md={6} p={10}>
-              <Typography variant='h5' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500" color={'#fff'} textAlign={'end'}>
-                Facility For Medical Care
-              </Typography>
-              <Typography variant='h2' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500" color={'#fff'} textAlign={'end'}>
-                Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana </span> <br />Bikku Hospital
-              </Typography>
-              <Typography mt={2} variant='h6' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500" color={'#fff'} textAlign={'end'}>
-                A great commitment is made by the buddhist monks towards the prosperity and the well being of our society and the country. It is an utmost need of the present to care for and to provide medical facilities to the aged and the needy monks. Therefore now it is the duty of each one of us to support and contribute to this worthy cause as a nation.
-              </Typography>
-              <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'end' }} data-aos="fade-up" data-aos-duration="2500" >
-                <Link to='/donate' style={{ textDecoration: 'none' }}>
-                  <AnimatedButton btnName="Donate" />
-                </Link>
-              </div>
-            </Grid>
-          </Grid>
-        )} */}
-        <div style={{ overflowX: 'hidden', overflowY: 'hidden' }}>
-          <Slider {...settings}>
-            <div style={{ width: '100vw', height: '100vh' }}>
+      <section style={{ height:'50%', backgroundColor: '#EFEFEF', backgroundImage: { bikku1 } }} id="section1">
+       
+        <div style={{ overflowX: 'hidden', overflowY: 'hidden',height:'88vh' }}>
+          <Slider {...settings} >
+            <div style={{ width: '100vw', height: '90vh' }}>
               {isMediumUp && (
-                <Grid
+                <Grid 
+                // bgcolor={'#0c0703'}
                   container
                   style={{
                     backgroundImage: `url(${bikku1})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'start',
                     backgroundRepeat: 'no-repeat',
                     height: '100vh',
-                    objectFit: 'cover'
+                    objectFit: 'cover',
+                    // background:'#685d52'
                   }}
                 >
                   <Grid item xs={12} md={6} p={10}></Grid>
@@ -143,7 +114,8 @@ const Home = () => {
                     </Typography>
                     <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'end' }} data-aos="fade-up" data-aos-duration="2500" >
                       <Link to='/donate' style={{ textDecoration: 'none' }}>
-                        <AnimatedButton btnName="Donate" />
+                        {/* <AnimatedButton btnName="Donate" /> */}
+                        <Button variant='contained'>Donate Now</Button>
                       </Link>
                     </div>
                   </Grid>
@@ -152,22 +124,26 @@ const Home = () => {
             </div>
 
             
-            <div style={{ width: '100vw', height: '100vh' }}>
+            <div style={{ width: '100vw', height: '90vh' }}>
               {isMediumUp && (
-                <Grid
+                <Grid 
+                // bgcolor={'#0c0703'}
                   container
                   style={{
                     backgroundImage: `url(${banner2})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: 'center',
+                    backgroundPosition: 'start',
                     backgroundRepeat: 'no-repeat',
-                    height: '90vh',
+                    height: '100vh',
+                    objectFit: 'cover',
+                    // background:'#685d52'
                   }}
                 >
-
+                 
                 </Grid>
               )}
             </div>
+
           </Slider>
 
 
