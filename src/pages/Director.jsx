@@ -58,7 +58,7 @@ const Director = () => {
             </Typography>
             <Typography variant='h3' data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"><span style={{ color: '#FF4D00' }}>Most Ven </span>  Mapalagama Somisara Thero </Typography>
-            <Typography mt={2} variant='subtitle1' data-aos="fade-up"
+            <Typography mt={2} variant='p' data-aos="fade-up"
               data-aos-anchor-placement="top-bottom"> The Most Venerable Mapalagama Sri Somisara Nayaka Thero of the Sri
               Dhathamma Viharaya, No. 94, Sunethra Devi Road, Kohuwala, has
               identified the need to build another hospital with the facilities for the
@@ -81,27 +81,7 @@ const Director = () => {
 
       {/* Section2 */}
 
-      {/* {isMediumUp && (<Grid item xs={12} md={6} p={10}>
-        <Typography
-          variant='h3'
-          color={'#212b36'}
-          textAlign={'start'}
-        >
-          Management
-        </Typography>
-        <hr style={{ background: '#FF4D00', height: '5px', border: 'none', width: '15%' }} />
-        <Typography
-          variant='h5'
-          color={'#212b36'}
-          textAlign={'start'}
-          mt={2}
-        >
-          This institution is managed by the Board of Directors
-          jointly with the Ministry of Health and the Kohuwala
-          Sri Dhatumaluwa Temple which is registered under the
-          Companies Act as a non-profit organization.
-        </Typography>
-      </Grid>)}; */}
+     
       {isMediumUp && (<section style={{marginTop:'60px' }} id="section1">
         <Grid container>
           
@@ -132,6 +112,42 @@ const Director = () => {
 
             {/* <div style={{ marginTop: '30px' }} >
               <AnimatedButton btnName="Learn More" /></div> */}
+          </Grid>
+          
+
+        </Grid>
+      </section>)}
+
+      {isMediumDown && (<section style={{marginTop:'60px' }} id="section1">
+        <Grid container>
+          
+          
+          
+          <Grid item xs={12} md={6} p={2}>
+            <Typography
+              variant='subtitle2'
+              color={'#212b36'}
+              textAlign={'start'}
+              
+            >
+              The Chief monk of Sri Dathumaluwa Temple
+            </Typography>
+            <Typography variant='h3'
+              ><span style={{ color: '#FF4D00' }}> Ven </span>  Pitigala Sonuththara Thero </Typography>
+            <Typography mt={2} variant='p'
+              > The  Venerable Pitigala Sonuththara current chief Nayaka Thero of the Sri
+              Dhathamma Viharaya, No. 94, Sunethra Devi Road, Kohuwala, has
+              identified the need to build another hospital with the facilities for the
+              monks living in the country.As a result of his untiring efforts, he has
+              donated a land of 40 perches, situated at 286/1 B, Pansala Road,
+              Kiriwattuduwa, in the Homagama Divisional Secretariat Division in the
+              Colombo District.</Typography>
+
+            {/* <div style={{ marginTop: '30px' }} >
+              <AnimatedButton btnName="Learn More" /></div> */}
+          </Grid>
+          <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} p={2} >
+            <img src={thero2} width={'70%'} alt="" />
           </Grid>
           
 

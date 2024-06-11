@@ -2,6 +2,8 @@ import { Box, Button, Grid, Typography, useMediaQuery } from '@mui/material'
 import React, { useEffect } from 'react'
 import img1 from '../assets/b1.jpeg'
 import bikku1 from '../assets/t31.png'
+import bikku2 from '../assets/thero10.jpg'
+
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -81,106 +83,111 @@ const Home = () => {
   return (
     <div>
       {/* <!-- ==========  Section 1  ========== --> */}
-      <section style={{ height:'50%', backgroundColor: '#EFEFEF', backgroundImage: { bikku1 } }} id="section1">
-       
-        <div style={{ overflowX: 'hidden', overflowY: 'hidden',height:'88vh' }}>
-          <Slider {...settings} >
+      <section style={{ height: '50%', backgroundColor: '#EFEFEF', backgroundImage: { bikku1 } }} id="section1">
+      {isMediumUp && (<div style={{ overflowX: 'hidden', overflowY: 'hidden', height: '88vh' }}>
+        
+          <Slider {...settings}>
             <div style={{ width: '100vw', height: '90vh' }}>
-              {isMediumUp && (
-                <Grid 
-                // bgcolor={'#0c0703'}
-                  container
-                  style={{
-                    backgroundImage: `url(${bikku1})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'start',
-                    backgroundRepeat: 'no-repeat',
-                    height: '100vh',
-                    objectFit: 'cover',
-                    // background:'#685d52'
-                  }}
-                >
-                  <Grid item xs={12} md={6} p={10}></Grid>
-
-                  <Grid item xs={12} md={6} p={10}>
-                    <Typography variant='h5' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500" color={'#fff'} textAlign={'end'}>
-                      Facility For Medical Care
-                    </Typography>
-                    <Typography variant='h2' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500" color={'#fff'} textAlign={'end'}>
-                      Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana </span> <br />Bhikkhu Hospital
-                    </Typography>
-                    <Typography mt={2} variant='h6' data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="2500" color={'#fff'} textAlign={'end'}>
-                      A great commitment is made by the buddhist monks towards the prosperity and the well being of our society and the country. It is an utmost need of the present to care for and to provide medical facilities to the aged and the needy monks. Therefore now it is the duty of each one of us to support and contribute to this worthy cause as a nation.
-                    </Typography>
-                    <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'end' }} data-aos="fade-up" data-aos-duration="2500" >
-                      <Link to='/donate' style={{ textDecoration: 'none' }}>
-                        {/* <AnimatedButton btnName="Donate" /> */}
-                        <Button variant='contained'>Donate Now</Button>
-                      </Link>
-                    </div>
-                  </Grid>
+              <Grid
+                container
+                style={{
+                  backgroundImage: `url(${bikku1})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'start',
+                  backgroundRepeat: 'no-repeat',
+                  height: '100vh',
+                  objectFit: 'cover',
+                }}
+              >
+                <Grid item xs={12} md={6} p={10}></Grid>
+                <Grid item xs={12} md={6} p={10}>
+                  <Typography
+                    variant="h5"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2500"
+                    color="#fff"
+                    textAlign="end"
+                  >
+                    Facility For Medical Care
+                  </Typography>
+                  <Typography
+                    variant="h2"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2500"
+                    color="#fff"
+                    textAlign="end"
+                  >
+                    Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span> <br />
+                    Bhikkhu Hospital
+                  </Typography>
+                  <Typography
+                    mt={2}
+                    variant="h6"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="top-bottom"
+                    data-aos-duration="2500"
+                    color="#fff"
+                    textAlign="end"
+                  >
+                    A great commitment is made by the buddhist monks towards the prosperity and the well being of our society and the country. It is an utmost need of the present to care for and to provide medical facilities to the aged and the needy monks. Therefore now it is the duty of each one of us to support and contribute to this worthy cause as a nation.
+                  </Typography>
+                  <div style={{ marginTop: '30px', display: 'flex', justifyContent: 'end' }} data-aos="fade-up" data-aos-duration="2500">
+                    <Link to="/donate" style={{ textDecoration: 'none' }}>
+                      <Button variant="contained">Donate Now</Button>
+                    </Link>
+                  </div>
                 </Grid>
-              )}
+              </Grid>
             </div>
-
-            
             <div style={{ width: '100vw', height: '90vh' }}>
-              {isMediumUp && (
-                <Grid 
-                // bgcolor={'#0c0703'}
-                  container
-                  style={{
-                    backgroundImage: `url(${banner2})`,
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'start',
-                    backgroundRepeat: 'no-repeat',
-                    height: '100vh',
-                    objectFit: 'cover',
-                    // background:'#685d52'
-                  }}
-                >
-                 
-                </Grid>
-              )}
+              <Grid
+                container
+                style={{
+                  backgroundImage: `url(${banner2})`,
+                  backgroundSize: 'cover',
+                  backgroundPosition: 'start',
+                  backgroundRepeat: 'no-repeat',
+                  height: '100vh',
+                  objectFit: 'cover',
+                }}
+              ></Grid>
             </div>
-
           </Slider>
-
-
-        </div>
-
-
-        {isMediumDown && (
-          <Grid
-            container
-            style={{
-              backgroundImage: `url(${mobileThero})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              height: '100vh',
-            }}
-          >
-            <Grid item xs={12} md={6} p={2}>
-              <Typography variant='subtitle1' data-aos="fade-up" data-aos-anchor-placement="top-bottom" color={'#fff'}>
-                Facility For Medical Care
-              </Typography>
-              <Typography variant='h3' data-aos="fade-up" data-aos-anchor-placement="top-bottom" color={'#fff'}>
-                Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana </span> <br />Bikku Hospital
-              </Typography>
-              <Typography mt={2} variant='p' data-aos="fade-up" data-aos-anchor-placement="top-bottom" color={'#fff'}>
-                A great commitment is made by the<br /> buddhist monks towards the prosperity and the well being of our society and the country. It is an utmost need of the present to care for and to provide medical facilities to the aged and the needy monks. Therefore now it is the duty of each one of us to support and contribute to this worthy cause as a nation.
-              </Typography>
-              <div style={{ marginTop: '30px' }} data-aos="fade-up">
-                <Link to='/donate' style={{ textDecoration: 'none' }}>
-                  {/* <AnimatedButton btnName="Donate" /> */}
-                  <Button variant='contained'>DONATE</Button>
-                </Link>
-              </div>
-            </Grid>
+        
+      </div>)}
+      {isMediumDown && (
+        <Grid
+          container
+          style={{
+            backgroundImage: `url(${bikku2})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+          }}
+        >
+          <Grid item xs={12} md={6} p={2}>
+            <Typography variant="subtitle1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" color="#fff">
+              Facility For Medical Care
+            </Typography>
+            <Typography variant="h3" data-aos="fade-up" data-aos-anchor-placement="top-bottom" color="#fff">
+              Guru Dev <span style={{ color: '#FF4D00' }}>Suwa Arana</span> <br />
+              Bhikku Hospital
+            </Typography>
+            <Typography mt={2} variant="body1" data-aos="fade-up" data-aos-anchor-placement="top-bottom" color="#fff">
+              A great commitment is made by the<br /> buddhist monks towards the prosperity and the well being of our society and the country. It is an utmost need of the present to care for and to provide medical facilities to the aged and the needy monks. Therefore now it is the duty of each one of us to support and contribute to this worthy cause as a nation.
+            </Typography>
+            <div style={{ marginTop: '30px' }} data-aos="fade-up">
+              <Link to="/donate" style={{ textDecoration: 'none' }}>
+                <Button variant="contained">DONATE</Button>
+              </Link>
+            </div>
           </Grid>
-        )}
-      </section>
+        </Grid>
+      )}
+    </section>
 
 
       {/* <!-- ========== Section 2 Start ========== --> */}

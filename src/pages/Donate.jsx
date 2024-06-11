@@ -118,12 +118,12 @@ const Donate = () => {
               </Typography>
 
               <div style={{ marginTop: '30px' }}>
-                <Button variant='contained'>LEARN MORE</Button>
+                <Button variant='contained'>Donate Now</Button>
               </div>
             </Grid>
           </Grid>
           <Grid container sx={{ overflowX: 'none' }}>
-            <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} data-aos="fade-right">
+            <Grid item xs={12} md={6} display={'flex'} justifyContent={'center'} alignItems={'center'} >
               <img src={boc} width={'45%'} alt="" />
 
               <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
@@ -138,10 +138,11 @@ const Donate = () => {
               <img src={sampath} width={'45%'} alt="" />
 
               <div style={{ textAlign: 'start', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <Typography mt={2} variant='caption' fontWeight={700}>BANK OF CEYLON (NUGEGODA)<br />
+              <Typography mt={2} variant='caption' fontWeight={700}>
+                SAMPATH BANK (KOHUWALA)<br />
                   Guru Dev Suwa Arana(A/C)<br />
-                  A/C Number - 79212171 <br />
-                  SWIFT CODE - BCEYLKLX</Typography>
+                  A/C Number - 109414025275 <br />
+                  SWIFT CODE -BSAMLKLX</Typography>
               </div>
             </Grid>
           </Grid>
